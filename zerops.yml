@@ -1,0 +1,23 @@
+zerops:
+  - setup: app
+    build:
+      base: java@21
+      prepareCommands:
+        - apk update
+        - apk add install scala
+        - apk add install sbt
+      deployFiles: /
+    run:
+      base: java@21
+      initCommands:
+        - apk add update
+        - apk add install scala
+        - apk add install sbt
+      prepareCommands:
+        - apk add update
+        - apk add install scala
+        - apk add install sbt
+      ports:
+        - port: 9000
+          httpSupport: true
+      start: sbt run
