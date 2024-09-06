@@ -14,7 +14,7 @@ zerops:
       deployFiles: /
     run:
       base: ubuntu@22.04
-      initCommands:
+      prepareCommands:
         - sudo apt-get update -y
         - sudo apt-get install default-jdk -y
         - sudo apt-get install scala -y
