@@ -1,6 +1,6 @@
 # Zerops x Scala
 
-A bare-bones example of a Scala backend using the Play Framework. It provides a lightweight starting point for building web applications with minimal configuration.
+A bare-bones example of a Scala backend using the Play Framework. It provides a lightweight starting point for building web applications with minimal configuration. Zerops makes deploying and running Ember.js apps, a breeze.
 
 ![Scala](https://github.com/zeropsio/recipe-shared-assets/blob/main/covers/svg/cover-scala.svg)
 
