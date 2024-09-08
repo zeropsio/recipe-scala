@@ -1,6 +1,6 @@
 # Zerops x Scala
 
-This is a starter application that shows how Play works.  Please see the documentation at <https://www.playframework.com/documentation/latest/Home> for more details.
+A bare-bones example of a Scala backend using the Play Framework. It provides a lightweight starting point for building web applications with minimal configuration.
 
 ![Scala](https://github.com/zeropsio/recipe-shared-assets/blob/main/covers/svg/cover-scala.svg)
 
