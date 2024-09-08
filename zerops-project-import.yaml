@@ -1,0 +1,10 @@
+project:
+  name: recipe-scala
+  tags:
+    - zerops-recipe
+
+services:
+  - hostname: app
+    type: ubuntu@22.04
+    enableSubdomainAccess: true
+    buildFromGit: https://github.com/zeropsio/recipe-scala
