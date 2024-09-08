@@ -4,17 +4,10 @@ This is a starter application that shows how Play works.  Please see the documen
 
 ![Scala](https://github.com/zeropsio/recipe-shared-assets/blob/main/covers/svg/cover-scala.svg)
 
-## Running
+## Recipe features
 
-Run this using [sbt](http://www.scala-sbt.org/).  If you downloaded this project from <http://www.playframework.com/download> then you'll find a prepackaged version of sbt in the project directory:
-
-```bash
-sbt run
-```
-
-And then go to <http://localhost:9000> to see the running web application.
-
-There are several demonstration files available in this template.
+- Latest version of **Scala** & **JDK** running on **Zerops Ubuntu** Service.
+- Latest version of **SBT(Simple build tool)** with **Play** web framework.
 
 ## Server backend
 
@@ -22,42 +15,19 @@ By default, the project uses the Pekko HTTP Server backend. To switch to the Net
 In the `build.sbt` of this project, you'll find a commented line for this setting; simply uncomment it to make the switch.
 For more detailed information, refer to the Play Framework [documentation](https://www.playframework.com/documentation/3.0.x/Server).
 
-## Controllers
 
-- `HomeController.scala`:
+<br/>
 
-  Shows how to handle simple HTTP requests.
+## Production vs. development
 
-- `AsyncController.scala`:
+This recipe is ready for production as is, and will scale horizontally by adding more containers in case of high traffic surges. If you want to achieve the highest baseline reliability and resiliace, start with at least two containers (add `minContainers: 2` in recipe YAML in the `app` service section, or change the minimum containers in "Automatic Scaling configuration" section of service detail).
 
-  Shows how to do asynchronous programming when handling a request.
+<br/>
 
-- `CountController.scala`:
+## Changes made over the default installation
 
-  Shows how to inject a component into a controller and use the component when
-  handling requests.
+If you want to modify your existing Scala backend to efficiently run on Zerops, there are no changes needed in the codebase on top of the standard installation, just add [zerops.yml](https://github.com/zeropsio/recipe-scala/blob/main/zerops.yml) to your repository.
 
-## Components
+<br/>
 
-- `Module.scala`:
-
-  Shows how to use Guice to bind all the components needed by your application.
-
-- `Counter.scala`:
-
-  An example of a component that contains state, in this case a simple counter.
-
-- `ApplicationTimer.scala`:
-
-  An example of a component that starts when the application starts and stops
-  when the application stops.
-
-## Filters
-
-- `Filters.scala`:
-
-  Creates the list of HTTP filters used by your application.
-
-- `ExampleFilter.scala`:
-
-  A simple filter that adds a header to every response.
+Need help setting your project up? Join [Zerops Discord community](https://discord.com/invite/WDvCZ54).
