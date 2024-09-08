@@ -2,6 +2,8 @@
 
 This is a starter application that shows how Play works.  Please see the documentation at <https://www.playframework.com/documentation/latest/Home> for more details.
 
+![Scala](https://github.com/zeropsio/recipe-shared-assets/blob/main/covers/svg/cover-scala.svg)
+
 ## Running
 
 Run this using [sbt](http://www.scala-sbt.org/).  If you downloaded this project from <http://www.playframework.com/download> then you'll find a prepackaged version of sbt in the project directory:
